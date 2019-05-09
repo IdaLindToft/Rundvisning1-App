@@ -9,6 +9,20 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <StackPanel>
+            <TextBox Text="Velkommen til" 
+                     TextAlignment="Center"
+                     FontFamily="Ariel" FontSize="70" 
+                     VerticalAlignment="Top" Margin="275,50,275,0" Height="105"/>
+            <TextBox Text="Ragnarock" 
+            TextAlignment="Center"
+            FontFamily="Ariel" FontSize="70" 
+            VerticalAlignment="Top" Margin="275,0,275,0" Height="105"/>
+            <Image Height="300" Margin="187,100,250,0" 
+                   Source="Billede Forside/Plader.jpg" HorizontalAlignment="Center" Stretch="Fill" Width="1500" />
+        </StackPanel>
 
-    </Grid>.
+
+
+    </Grid>
 </Page>
