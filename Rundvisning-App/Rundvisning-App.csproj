@@ -123,6 +123,30 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Forside.xaml.cs">
+      <DependentUpon>Forside.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Side1.xaml.cs">
+      <DependentUpon>Side1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Side2.xaml.cs">
+      <DependentUpon>Side2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Side3.xaml.cs">
+      <DependentUpon>Side3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Side4.xaml.cs">
+      <DependentUpon>Side4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Side5.xaml.cs">
+      <DependentUpon>Side5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Side6.xaml.cs">
+      <DependentUpon>Side6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Side7.xaml.cs">
+      <DependentUpon>Side7.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -149,11 +173,47 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="View\Forside.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Side1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Side2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Side3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Side4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Side5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Side6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Side7.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.7</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\" />
+    <Folder Include="ViewModel\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
