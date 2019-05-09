@@ -9,6 +9,19 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <ListView HorizontalAlignment="Left" Height="246" Margin="305,0,0,0" VerticalAlignment="Center" Width="487">
+            <StackPanel>
+                <Button Content="1 - Titel" Height="30" Width="487" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Center"/>
+                <Button Content="2 - Titel" Height="30" Width="487" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Center"/>
+                <Button Content="3 - Titel" Height="30" Width="487" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Center"/>
+                <Button Content="4 - Titel" Height="30" Width="487" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Center"/>
+                <Button Content="5 - Titel" Height="30" Width="487" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Center"/>
+                <Button Content="6 - Titel" Height="30" Width="487" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center"/>
+            </StackPanel>
+
+
+
+        </ListView>
 
     </Grid>
 </Page>
