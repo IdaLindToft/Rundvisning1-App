@@ -11,14 +11,14 @@
     <Grid HorizontalAlignment="Stretch" Margin="0,0,0.4,0" VerticalAlignment="Stretch">
 
         <StackPanel Background="#FFED8557" Margin="0,0,0,0" HorizontalAlignment="Stretch" Grid.RowSpan="2" VerticalAlignment="Stretch">
-            <TextBox Text="Velkommen til" 
+            <TextBlock Text="Velkommen til" 
                      TextAlignment="Center"
                      FontFamily="impact" FontSize="70"
-                     VerticalAlignment="Top" Margin="275,50,275,0" Height="105" Background="{x:Null}" HorizontalAlignment="Stretch"/>
-            <TextBox Text="Ragnarock" 
+                     VerticalAlignment="Top" Margin="275,50,275,0" Height="105" HorizontalAlignment="Stretch"/>
+            <TextBlock Text="Ragnarock" 
                      TextAlignment="Center"
                      FontFamily="impact" FontSize="70" 
-                     VerticalAlignment="Top" Margin="275,0,275,0" Height="105" Background="{x:Null}"/>
+                     VerticalAlignment="Top" Margin="275,0,275,0" Height="105"/>
             <Image Height="398" Margin="0,0,0,0" 
                    Source="Billede Forside/Plader.jpg" HorizontalAlignment="Center" Stretch="Fill" Width="1034" VerticalAlignment="Stretch" />
             <Button Content="START DIN RUNDVISNING HER" FontFamily="Impact" FontSize="45"
