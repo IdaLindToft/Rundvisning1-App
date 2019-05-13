@@ -6,9 +6,26 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="1034">
 
     <Grid>
+        <StackPanel Background="#FFED8557">
+            <TextBox Text="Velkommen til" 
+                     TextAlignment="Center"
+                     FontFamily="impact" FontSize="70"
+                     VerticalAlignment="Top" Margin="275,50,275,0" Height="105" Background="{x:Null}" HorizontalAlignment="Stretch"/>
+            <TextBox Text="Ragnarock" 
+                     TextAlignment="Center"
+                     FontFamily="impact" FontSize="70" 
+                     VerticalAlignment="Top" Margin="275,0,275,0" Height="105" Background="{x:Null}"/>
+            <Image Height="350" Margin="0,100,0,0" 
+                   Source="Billede Forside/Plader.jpg" HorizontalAlignment="Center" Stretch="Fill" Width="1034" />
+            <Button Content="START DIN RUNDVISNING HER" FontFamily="Impact" FontSize="45"
+                    HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Stretch" Width="550" Height="100"/>
+        </StackPanel>
+
+
 
     </Grid>
 </Page>
+
