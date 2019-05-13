@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Rundvisning_App.View;
 
 namespace Rundvisning_App
 {
@@ -66,7 +67,7 @@ namespace Rundvisning_App
                     // When the navigation stack isn't restored navigate to the first page,
                     // configuring the new page by passing required information as a navigation
                     // parameter
-                    rootFrame.Navigate(typeof(MainPage), e.Arguments);
+                    rootFrame.Navigate(typeof(Forside), e.Arguments);
                 }
                 // Ensure the current window is active
                 Window.Current.Activate();
