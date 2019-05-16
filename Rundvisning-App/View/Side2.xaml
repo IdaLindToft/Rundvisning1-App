@@ -5,33 +5,89 @@
     xmlns:local="using:Rundvisning_App.View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" Foreground="#FFDD9C50" FocusVisualSecondaryBrush="#99E75454" FocusVisualPrimaryBrush="#FFDD2020" BorderBrush="Blue" Background="Orange">
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height ="1920"  Width="1080">
 
-    <Grid Margin="0,0,72,0" FocusVisualPrimaryBrush="#FF1B1B1C" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Height="962">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="721*"/>
-            <ColumnDefinition Width="155*"/>
-            <ColumnDefinition Width="552*"/>
-            <ColumnDefinition Width="Auto" MinWidth="0"/>
-        </Grid.ColumnDefinitions>
-        <Image Source="../View/image/1.png"  Height="800" VerticalAlignment="Top" Margin="-1,32,518,0" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Grid.ColumnSpan="3">
-            <Image.RenderTransform>
-                <CompositeTransform Rotation="-0.035"/>
-            </Image.RenderTransform>
-        </Image>
-        <Image Source="image/2.png" Height="801" VerticalAlignment="Top" Width="911.2" Margin="-8,503,525,0" RenderTransformOrigin="0.447,0.493" UseLayoutRounding="True" Grid.ColumnSpan="3" ScrollViewer.HorizontalScrollBarVisibility="Visible">
-            <Image.RenderTransform>
-                <CompositeTransform Rotation="-0.231" TranslateX="-0.012" TranslateY="0.33"/>
-            </Image.RenderTransform>
-        </Image>
-        <Button Content="1" HorizontalAlignment="Left" Margin="328,165,0,0" VerticalAlignment="Top" Height="59" Width="86" FontFamily="Arial" FontSize="36"/>
-        <Button Content="2" HorizontalAlignment="Left" Margin="59,230,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="36" Click="Button_Click"/>
-        <Button Content="5" HorizontalAlignment="Left" Margin="62.2,722,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.458,0.741" FontFamily="Arial" FontSize="36" Grid.Column="1"/>
-        <Button Content="6" HorizontalAlignment="Left" Margin="195,761,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="36"/>
-        <Button Content="4" HorizontalAlignment="Left" Margin="623,548,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="36"/>
-        <Button Content="3" HorizontalAlignment="Left" Margin="82.25,246,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="36" Grid.Column="1"/>
-        <TextBlock HorizontalAlignment="Left" Margin="0,34,0,0" Text="1.Sal" TextWrapping="Wrap" VerticalAlignment="Top" Height="102" Width="145" FontSize="36" FontFamily="Arial"/>
-        <TextBlock HorizontalAlignment="Left" Margin="19,516,0,0" Text="2.Sal" TextWrapping="Wrap" VerticalAlignment="Top" Height="89" Width="159" FontSize="36" FontFamily="Arial"/>
+    <Grid Height="1920px" Width="1080px" HorizontalAlignment="Stretch" Margin="0,0,0.4,0" VerticalAlignment="Stretch">
 
+        <StackPanel Background="#FFED8557" 
+                    Margin="0,0,0,0" 
+                    HorizontalAlignment="Stretch" 
+                    VerticalAlignment="Stretch">
+
+            <TextBlock Text="Tryk på tallene på kortet" 
+                       TextAlignment="Center"
+                       Margin="0,50,0,0"
+                       FontFamily="impact" 
+                       FontSize="50">
+            </TextBlock>
+
+            <TextBlock Text="For at læse mere om udstillingerne" 
+                       TextAlignment="Center"
+                       Margin="0,20,0,0"
+                       FontFamily="impact" 
+                       FontSize="50">
+            </TextBlock>
+
+            <TextBlock Text="2 Sal" 
+                       TextAlignment="Left"
+                       Margin="35,150,0,0"
+                       FontFamily="impact" 
+                       FontSize="40">
+            </TextBlock>
+
+            <StackPanel>
+                <Image  Margin="35,15,35,0" Source="image/1.png" ></Image>
+
+                <Button Canvas.ZIndex="3" Content="1" Background="DimGray" Click="Button_Click_1">
+                    <Button.RenderTransform>
+                        <TranslateTransform Y="-165" X="210"/>
+                    </Button.RenderTransform>
+                </Button>
+                <Button Canvas.ZIndex="3" Content="2" Background="DimGray">
+                    <Button.RenderTransform>
+                        <TranslateTransform Y="-270" X="425"/>
+                    </Button.RenderTransform>
+                </Button>
+                <Button Canvas.ZIndex="3" Content="3" Background="DimGray">
+                    <Button.RenderTransform>
+                        <TranslateTransform Y="-500" X="620"/>
+                    </Button.RenderTransform>
+                </Button>
+            </StackPanel>
+
+
+            <TextBlock Text="1 Sal" 
+                       TextAlignment="Left"
+                       Margin="35,150,0,0"
+                       FontFamily="impact" 
+                       FontSize="40">
+            </TextBlock>
+
+            <StackPanel>
+
+                <Image Source="image/2.png" 
+                    Canvas.ZIndex="2" Margin="35,20,35,0" 
+                       
+                       VerticalAlignment="Stretch"/>
+                <Button Canvas.ZIndex="3" Content="4" Background="DimGray">
+                    <Button.RenderTransform>
+                        <TranslateTransform Y="-70" X="830"/>
+                    </Button.RenderTransform>
+                </Button>
+                <Button Canvas.ZIndex="3" Content="5" Background="DimGray">
+                    <Button.RenderTransform>
+                        <TranslateTransform Y="-200" X="300"/>
+                    </Button.RenderTransform>
+                </Button>
+                <Button Canvas.ZIndex="3" Content="6" Background="DimGray">
+                    <Button.RenderTransform>
+                        <TranslateTransform Y="-350" X="930"/>
+                    </Button.RenderTransform>
+                </Button>
+            </StackPanel>
+
+
+        </StackPanel>
     </Grid>
 </Page>
